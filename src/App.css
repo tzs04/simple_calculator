@@ -1,31 +1,56 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 300px;
+  height: 400px;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator input {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  text-align: right;
+  border: none;
+  background-color: transparent;
 }
 
-.heart {
-  color: #ff0000;
+.calculator button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
-.small {
-  font-size: 0.75rem;
+.calculator button:hover {
+  background-color: #ddd;
+}
+
+.calculator button.operator {
+  background-color: #faa;
+  color: #fff;
+}
+
+.calculator button.operator:hover {
+  background-color: #f88;
+}
+
+.calculator .number-pad {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.calculator .result {
+  margin-top: 20px;
+  font-size: 18px;
 }
